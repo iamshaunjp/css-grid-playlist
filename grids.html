@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using CSS Grid</title>
+	<style>
+		body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+		}
+		#content{
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			grid-auto-rows: minmax(150px, auto);
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		#content > *{
+			padding: 10px;
+		}
+		header{
+			grid-column: span 3;
+			background: #3bbced;
+		}
+		main{
+			grid-column: 2 / 4;
+			grid-row: 2 / 4;
+			background: #e82b69;
+		}
+		aside{
+			grid-column: 1 / 2;
+			background: #fac24a;
+		}
+		nav{
+			grid-column: 1 / 2;
+			background: #8ae348;
+		}
+		footer{
+			grid-column: span 3;
+			background: #a56dda;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="content">
+
+		<header>Header</header>
+
+		<main>Main</main>
+
+		<aside>Aside</aside>
+
+		<nav>Nav</nav>
+
+		<footer>Footer</footer>
+
+	</div>
+
+</body>
+</html>
