@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Flexbox</title>
+	<style>
+		body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+			line-height: 3em;
+		}
+		#content{
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		#middle{
+			display: flex;
+		}
+		#sidebar{
+			flex-grow: 1;
+		}
+		header{
+			background: #3bbced;
+			height: 50px;
+		}
+		main{
+			background: #e82b69;
+			flex-grow: 2;
+		}
+		aside{
+			background: #fac24a;
+			flex-grow: 1;
+			height: 200px;
+		}
+		nav{
+			background: #8ae348;
+			flex-grow: 1;
+			height: 200px;
+		}
+		footer{
+			background: #a56dda;
+			height: 100px;
+		}
+		#middle:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="content">
+
+		<header>Header</header>
+
+		<div id="middle"><!-- extra markup -->
+
+			<main>Main</main>
+
+			<div id="sidebar"><!-- extra markup -->
+
+				<aside>Aside</aside>
+
+				<nav>Nav</nav>
+
+			</div>
+
+		</div>
+
+		<footer>Footer</footer>
+
+	</div>
+
+</body>

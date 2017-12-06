@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Floats</title>
+	<style>
+		body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+			line-height: 3em;
+		}
+		#content{
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		header{
+			background: #3bbced;
+			height: 50px;
+		}
+		main{
+			float: right;
+			width: 60%;
+			background: #e82b69;
+			height: 400px;
+		}
+		aside{
+			background: #fac24a;
+			height: 200px;
+		}
+		nav{
+			background: #8ae348;
+			height: 200px;
+		}
+		footer{
+			background: #a56dda;
+			height: 100px;
+		}
+		#sidebar{
+			float: left;
+			width: 40%;
+		}
+		#middle:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="content">
+		
+		<header>Header</header>
+
+		<div id="middle"><!-- extra markup -->
+
+			<main>Main</main>
+
+			<div id="sidebar"><!-- extra markup -->
+
+				<aside>Aside</aside>
+
+				<nav>Nav</nav>
+
+			</div>
+
+		</div>
+
+		<footer>Footer</footer>
+
+	</div>
+
+</body>
+</html>
