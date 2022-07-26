@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Using CSS Grid</title>
 	<style>
-		body{
+		body {
 			color: #fff;
 			font-family: 'Nunito Semibold';
 			text-align: center;
 		}
-		#content{
+
+		#content {
 			display: grid;
 			/*grid-template-columns: 30% 20% 50%;*/
 			/*grid-template-columns: 1fr 2fr 1fr;*/
@@ -16,16 +18,19 @@
 			max-width: 960px;
 			margin: 0 auto;
 		}
-		#content div{
+
+		#content div {
 			background: #3bbced;
 			padding: 30px;
 		}
-		#content div:nth-child(even){
+
+		#content div:nth-child(even) {
 			background: #777;
 			padding: 30px;
 		}
 	</style>
 </head>
+
 <body>
 
 	<div id="content">
@@ -43,4 +48,5 @@
 	</div>
 
 </body>
+
 </html>
